@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`default code: code 1`] = `
+"
+class Display extends React.Component {
+  // @displayName
+  static On = () => <div>On</div>
+  static Off = () => <div>Off</div>
+  render() {
+    return <div>{this.props.children}</div>
+  }
+}
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+class Display extends React.Component {
+  // @displayName
+  static On = () => <div>On</div>;
+  static Off = () => <div>Off</div>;
+  render() {
+    return <div>{this.props.children}</div>;
+  }
+}
+Display.On.displayName = \\"Display.On\\";
+"
+`;
