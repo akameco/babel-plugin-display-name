@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-display-name",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "add displayName",
   "license": "MIT",
   "repository": "akameco/babel-plugin-display-name",
