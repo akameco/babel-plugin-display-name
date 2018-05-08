@@ -31,6 +31,8 @@ $ yarn add --dev babel-plugin-display-name
 class Display extends React.Component {
   // @displayName
   static On = () => <div>On</div>
+  static Off = () => <div>Off</div>
+
   render() {
     return <div>{this.props.children}</div>
   }
@@ -39,16 +41,18 @@ class Display extends React.Component {
 
 ### After
 
-```diff
+```js
 class Display extends React.Component {
   // @displayName
-  static On = () => <div>On</div>;
+  static On = () => <div>On</div>
+  static Off = () => <div>Off</div>
+
   render() {
-    return <div>{this.props.children}</div>;
+    return <div>{this.props.children}</div>
   }
 }
 
-+Display.On.displayName = "Display.On";
+Display.On.displayName = "Display.On"
 ```
 
 ## Contributors
